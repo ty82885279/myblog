@@ -1,0 +1,34 @@
+mode: "dev"
+port: 8881
+
+auth:
+# token过期时间
+  jwt_atoken_expire: 180
+  jwt_rtoken_expire: 720
+
+log:
+  level: "debug"
+  filename: "blog.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "root123."
+  dbname: "myblog"
+  max_open_conns: 200
+  max_idle_conns: 50
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  password: ""
+  db: 0
+  pool_size: 100
+
+
+
+
